@@ -1,0 +1,400 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+/* body {
+  background-color: #000122;
+} */
+.container-fluid,
+.container,
+*,
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font: rgb(37, 37, 37);
+}
+
+/* color theme*/
+.color-paint {
+  color: #6a38b4;
+}
+
+/* top left and bottom right border */
+#index-top-left-border {
+  border-top: solid 3px #6a38b4;
+  border-left: solid 3px #6a38b4;
+}
+#index-bottom-right-border {
+  border-bottom: solid 3px #6a38b4;
+  border-right: solid 3px #6a38b4;
+}
+/* logo/login */
+#wrapper-logo {
+  border-right: solid 1px #6a38b4;
+}
+#wrapper-login {
+  border-left: solid 1px #6a38b4;
+}
+/*  */
+.top-midman {
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.rating-top-midman {
+  color: #6a38b4;
+}
+
+.details-btn {
+  background-color: #6a38b4;
+  color: white;
+}
+
+.details-btn:hover {
+  background-color: white;
+  color: #6a38b4;
+  border-color: solid 2px #6a38b4;
+
+  border: solid 2px #6a38b4;
+}
+
+/* landing page */
+/* .wrapper1 { */
+/* height: 100vh; */
+/* border: solid 0px rgb(255, 255, 255); */
+/* border-radius: 10px; */
+/* background: #fff; */
+/* box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2); */
+/* } */
+
+.left-wrapper {
+  /* background-image: url("img/mouse-kb-bg.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 0 0 15px;
+  height: 50vh;
+}
+
+#img-logo {
+  width: 40%;
+}
+
+/* text box color when selected */
+#username:focus {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px #560bc5;
+}
+
+#password:focus {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px #560bc5;
+}
+/*  */
+
+/* login form */
+#btn-login {
+  background-color: #8c40ff;
+  border: solid 1px #7418ff;
+  width: 100%;
+}
+
+#btn-login:hover {
+  background-color: #560bc5;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #8c40ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+#forgotPw a {
+  color: #8c40ff;
+}
+
+#sign-up a {
+  color: #560bc5;
+  padding: 2px;
+  font-weight: bold;
+}
+/*  */
+
+.card-body {
+  min-height: 300px;
+  min-width: 300px;
+  margin-right: 5px;
+}
+
+/* ------------------------------END LANDING PAGE -------------------------- */
+
+/* HOME PAGE */
+/* ------------------------------START Side/Nav Bar -------------------------- */
+
+/* navbar brand */
+.maretred-wrapper .maretred-header {
+  color: #560bc5;
+  font-size: x-large;
+}
+.maretred-wrapper .maretred-header:hover {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #560bc5;
+}
+
+/* icon pill */
+.icon-pill:hover {
+  color: #560bc5;
+}
+/*  */
+
+/* search pill */
+.search-pill input {
+  padding: 15px;
+  font-size: smaller;
+}
+.search-pill input[type="search"]:focus {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px #560bc5;
+}
+
+.search-pill input[type="search"]:hover {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px #560bc5;
+}
+/* navbar pill */
+.navbar-nav li .active {
+  border-bottom: solid 2px #560bc5;
+  color: #6a38b4;
+}
+
+.navbar-nav .nav-item:hover {
+  font-weight: bold;
+}
+
+/* navbar responsive */
+@media (max-width: 991px) {
+  .sidebar {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: solid 1px #6a38b4;
+  width: 35px;
+  height: 35px;
+}
+/* ------------------------------END Side/Nav Bar -------------------------- */
+
+/* side bar */
+.offcanvas-title {
+  color: #6a38b4;
+}
+
+a {
+  text-decoration: none;
+  color: #6a38b4;
+}
+
+.message-pill:hover {
+  background-color: #f0f2f5;
+}
+/*  */
+
+/* HOME BODY */
+/* banner */
+.banner-pill {
+  background-color: #8c40ff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.banner-pill div p {
+  margin-top: 25px;
+}
+
+/* HOME BACKGROUND COLOR */
+.home-wrapper {
+  background-color: #ffffff;
+}
+
+/* banner img */
+/* .banner-pill img {
+} */
+
+.banner-right-panel img {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (max-width: 991px) {
+  .banner-pill div img {
+    display: none;
+  }
+}
+
+/* banner btn pill */
+.btn-banner-pill1 {
+  background-color: #4b07b1;
+  border: #f0f2f5;
+}
+.btn-banner-pill1:hover {
+  border: solid 2px #f0f2f5;
+}
+/* 
+.btn-banner-pill2:hover {
+  border: none;
+  background-color: #4b07b1;
+} */
+
+/* tabs */
+.post-tab ul li button {
+  color: rgb(15, 15, 15);
+}
+
+.post-tab ul li button:hover {
+  background-color: #6a38b4;
+  color: white;
+}
+
+.post-tab ul li .nav-link {
+  color: #6a38b4;
+}
+
+.post-tab ul li .nav-link:focus {
+  background-color: #6a38b4;
+  color: white;
+}
+.post-tab ul li .nav-link:active {
+  background-color: #6a38b4;
+}
+
+/* your thought */
+#your-thought {
+  width: 20vw;
+  padding: 4px;
+  font-size: small;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+.your-thought {
+  background-color: white;
+}
+
+.plus-btn {
+  font-size: x-large;
+  color: #4b07b1;
+}
+.plus-btn:hover {
+  font-size: xx-large;
+  border-radius: 10px;
+}
+
+/* modal btn */
+#modal-post-btn {
+  background-color: #4b07b1;
+}
+
+#modal-post-btn:hover {
+  background-color: white;
+  border: solid 2px #4b07b1;
+  color: #4b07b1;
+}
+
+.modal-newpost-icon:hover {
+  font-size: larger;
+}
+
+/* ---monkey luffy post--- */
+.write-comment {
+  width: 20vw;
+  padding: 4px;
+  font-size: small;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+/* reactions */
+.reaction-pill:hover {
+  font-size: larger;
+}
+
+/* ================================================================== */
+/* anonymous */
+#anonymous1:focus,
+#anonymous2:focus {
+  background-color: #6a38b4;
+  border: solid 2px #6a38b4;
+  box-shadow: none;
+}
+
+#anonymous1:active,
+#anonymous2:active {
+  background-color: #6a38b4;
+  border: solid 2px #6a38b4;
+  box-shadow: none;
+}
+
+#anonymous1:checked,
+#anonymous2:checked {
+  background-color: #6a38b4;
+  border: solid 2px #6a38b4;
+  box-shadow: none;
+}
+/*  */
+
+/* =================================================================== */
+
+/* TRADE PAGE */
+
+.trade-banner {
+  border: solid 2px #6a38b4;
+  border-radius: 10px;
+}
+
+.trade-user-img {
+  border-radius: 50%;
+  width: 70px;
+  border-color: solid 3px #6a38b4;
+}
+
+.trade-user-idle {
+  border-color: solid 3px #6a38b4;
+  -moz-box-shadow: 0 0 10px orange;
+  -webkit-box-shadow: 0 0 10px orange;
+  box-shadow: 0 0 10px orange;
+}
+
+.trade-user-unready {
+  border-color: solid 3px #6a38b4;
+  -moz-box-shadow: 0 0 10px red;
+  -webkit-box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px red;
+}
+
+.trade-user-ready {
+  border-color: solid 3px #6a38b4;
+  -moz-box-shadow: 0 0 10px green;
+  -webkit-box-shadow: 0 0 10px green;
+  box-shadow: 0 0 10px green;
+}
+
+.font-smaller {
+  font-size: smaller;
+}
+.font-x-small {
+  font-size: x-small;
+}
+
+/*  */
+/* pagination */
+.pagination-pill a {
+  color: #6a38b4;
+}
+
+.pagination-pill a:hover {
+  color: white;
+  background-color: #6a38b4;
+}

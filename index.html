@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/mt-logo50px.png" />
+    <style>
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        /* border-radius: 50%; */
+        /* border: 1px solid black; */
+        background-image: none;
+      }
+
+      .carousel-control-next-icon:after {
+        content: ">";
+        font-size: 55px;
+        color: #6a38b4;
+      }
+
+      .carousel-control-prev-icon:after {
+        content: "<";
+        font-size: 55px;
+        color: #6a38b4;
+      }
+
+      .card {
+        border: none !important;
+      }
+    </style>
+    <title>Maretred</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-lg-9 d-none d-sm-block" id="index-top-left-border">
+          <div id="carousel-indicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+                style="background-color: #6138b4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                style="background-color: #6138b4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                style="background-color: #6138b4"
+              ></button>
+            </div>
+            <!-- indicator end -->
+
+            <!-- carousel inner -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-group">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Monkey Luffy </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Roronoa Zoro </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Soul King Brook </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                </div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                  <h5>1st slide label</h5>
+                  <p>
+                    345Some representative placeholder content for the third
+                    slide.
+                  </p>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <div class="card-group">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Nami Cat Burglar </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Soge King Usopp </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Nico Robin </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="carousel-item">
+                <div class="card-group">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Tony Tony Chopper </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Sanji Vinsmoke </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Cyborg Franky </a>
+                      <!-- <span> | </span>
+                        <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                        sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-indicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-indicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-3 d-none d-sm-block">
+          <h1 class="display-5" style="color: #6a38b4">Top Midmans</h1>
+        </div>
+      </div>
+
+      <!-- LOGO & LOGIN -->
+      <div class="row mt-2 mb-2">
+        <!-- LOGO -->
+        <div
+          class="col-lg-6 d-flex justify-content-center align-items-center"
+          id="wrapper-logo"
+        >
+          <img
+            src="img/mtLogoLarge.png"
+            alt="Maretrade logo"
+            id="img-logo"
+            class="img-fluid"
+          />
+        </div>
+        <!-- LOGIN -->
+        <div class="col-lg-1" id="wrapper-login"></div>
+        <div class="col-lg-4">
+          <form action="">
+            <!-- <label for="login">Login: </label> -->
+            <div class="mb-4">
+              <input
+                type="text text-box"
+                id="username"
+                placeholder="Email or phone number"
+                class="form-control"
+                minlength="6"
+                maxlength="25"
+              />
+            </div>
+
+            <!-- <label for="password">Password: </label> -->
+            <div class="mb-2">
+              <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="Password"
+                class="form-control"
+                minlength="6"
+                maxlength="25"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col d-flex justify-content-start align-items-start">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="remember"
+                    checked
+                  />
+                  <label for="remember" class="form-check-label"
+                    >Remember me</label
+                  >
+                </div>
+              </div>
+
+              <!-- forgot password -->
+              <div
+                class="col d-flex justify-content-end align-items-end"
+                id="forgotPw"
+              >
+                <a href="#!">Forgot password?</a>
+              </div>
+              <div class="text-center">
+                <a href="home.html">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block mt-4 col-lg-12"
+                    id="btn-login"
+                  >
+                    Sign in
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <hr />
+            <div class="text-center" id="sign-up">
+              <!-- <button type="button" class="btn btn-success btn-block mb-4">
+                    Create new account
+                  </button> -->
+              <span>Don't have an account? </span><a href="">Sign up</a>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <!--  -->
+
+      <!-- HOT TOPICS -->
+      <div class="row justify-content-end align-items-end">
+        <div class="col-lg-3 d-none d-sm-block text-end">
+          <h1 class="display-5" style="color: #6a38b4">Hot Topics</h1>
+        </div>
+        <!-- HOT TOPICS CONTENT -->
+        <div id="index-bottom-right-border" class="col-lg-9 d-none d-sm-block">
+          <div id="carousel-indicators2" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators2"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+                style="background-color: #6138b4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators2"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                style="background-color: #6138b4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-indicators2"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                style="background-color: #6138b4"
+              ></button>
+            </div>
+            <!-- indicator end -->
+
+            <!-- carousel inner -->
+            <div class="carousel-inner">
+              <!-- 1 -->
+              <div class="carousel-item active">
+                <div class="card mb-3" style="max-width: 100vw">
+                  <div class="row text-center">
+                    <div class="card-body">
+                      <a href="#">
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid profile-pic"
+                          alt=""
+                        />
+                        <span class="card-title mt-3">Anonymous143</span> |
+                      </a>
+                      <span class="text-body-secondary text-muted">3d ago</span>
+                      <p class="card-text mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, culpa ex. Doloribus in magni amet placeat
+                        pariatur recusandae eaque, dolores, accusamus inventore
+                        nihil officiis aut officia unde tenetur porro
+                        consequatur maiores delectus quaerat veniam cupiditate
+                        nostrum ratione corrupti error. Esse in error
+                        reprehenderit a hic ab laborum nostrum earum? Sequi
+                        accusantium fa
+                      </p>
+                      <!-- reactions -->
+                      <div class="text-body-secondary">
+                        <a class="reaction-pill" href="#" title="view likes">
+                          <i class="bi bi-hand-thumbs-up-fill"></i> 626 likes
+                        </a>
+                        <span> | </span>
+                        <a class="reaction-pill" href="#" title="view comments">
+                          <i class="bi bi-chat-square-text-fill"></i> 123
+                          comments</a
+                        >
+                        <span> | </span>
+                        <a class="reaction-pill" href="" title="view shared">
+                          <i class="bi bi-share-fill"></i> 56 shares</a
+                        >
+                        <p class="mt-3">
+                          <button class="btn details-btn">More Details</button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                  <h5>1st slide label</h5>
+                  <p>
+                    345Some representative placeholder content for the third
+                    slide.
+                  </p>
+                </div> -->
+              </div>
+
+              <!-- 2 -->
+              <div class="carousel-item">
+                <div class="card-group">
+                  <div class="card mb-3" style="max-width: 100vw">
+                    <div class="row text-center">
+                      <div class="card-body">
+                        <a href="#">
+                          <img
+                            src="img/profile-pic/default-pic.jpg"
+                            class="img-fluid profile-pic"
+                            alt=""
+                          />
+                          <span class="card-title mt-3">Anonymous619</span> |
+                        </a>
+                        <span class="text-body-secondary text-muted"
+                          >2d ago</span
+                        >
+                        <p class="card-text mt-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Assumenda, culpa ex. Doloribus in magni amet
+                          placeat pariatur recusandae eaque, dolores, accusamus
+                          inventore nihil officiis aut officia unde tenetur
+                          porro consequatur maiores delectus quaerat veniam
+                          cupiditate nostrum ratione corrupti error. Esse in
+                          error reprehenderit a hic ab laborum nostrum earum?
+                          Sequi accusantium fa nihil officiis aut officia unde
+                          tenetur porro consequatur m
+                        </p>
+                        <!-- reactions -->
+                        <div class="text-body-secondary">
+                          <a class="reaction-pill" href="#" title="view likes">
+                            <i class="bi bi-hand-thumbs-up-fill"></i> 434 likes
+                          </a>
+                          <span> | </span>
+                          <a
+                            class="reaction-pill"
+                            href="#"
+                            title="view comments"
+                          >
+                            <i class="bi bi-chat-square-text-fill"></i> 95
+                            comments</a
+                          >
+                          <span> | </span>
+                          <a class="reaction-pill" href="" title="view shared">
+                            <i class="bi bi-share-fill"></i> 32 shares</a
+                          >
+                          <p class="mt-3">
+                            <button class="btn details-btn">
+                              More Details
+                            </button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <!-- 3 -->
+              <div class="carousel-item">
+                <div class="card-group">
+                  <div class="card mb-3" style="max-width: 100vw">
+                    <div class="row text-center">
+                      <div class="card-body">
+                        <a href="#">
+                          <img
+                            src="img/profile-pic/default-pic.jpg"
+                            class="img-fluid profile-pic"
+                            alt=""
+                          />
+                          <span class="card-title mt-3">Anonymous814</span> |
+                        </a>
+                        <span class="text-body-secondary text-muted"
+                          >3d ago</span
+                        >
+                        <p class="card-text mt-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Assumenda, culpa ex. Doloribus in magni amet
+                          placeat
+                        </p>
+                        <!-- reactions -->
+                        <div class="text-body-secondary">
+                          <a class="reaction-pill" href="#" title="view likes">
+                            <i class="bi bi-hand-thumbs-up-fill"></i> 1134 likes
+                          </a>
+                          <span> | </span>
+                          <a
+                            class="reaction-pill"
+                            href="#"
+                            title="view comments"
+                          >
+                            <i class="bi bi-chat-square-text-fill"></i> 123
+                            comments</a
+                          >
+                          <span> | </span>
+                          <a class="reaction-pill" href="" title="view shared">
+                            <i class="bi bi-share-fill"></i> 321 shares</a
+                          >
+                          <p class="mt-3">
+                            <button class="btn details-btn">
+                              More Details
+                            </button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-indicators2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-indicators2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="sticky-bottom">
+      <p style="color: white">© 2023 Maretred. All Rights Reserved.</p>
+    </footer>
+    <style>
+      .sticky-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #6138b4;
+        color: white;
+        text-align: center;
+      }
+
+      * {
+        color: rgb(58, 58, 58);
+      }
+    </style>
+  </body>
+</html>

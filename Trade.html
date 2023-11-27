@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/mt-logo50px.png" />
+
+    <style>
+      * {
+        color: rgb(58, 58, 58);
+      }
+    </style>
+    <title>Maretred</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-white shadow">
+      <div class="container maretred-wrapper">
+        <!-- logo -->
+        <a href="#"
+          ><img src="img/mt-logo50px.png" alt="Maretred logo" class="img-fluid"
+        /></a>
+        <a class="maretred-header navbar-brand" href="#"> &nbsp;Maretred</a>
+        <!-- toggle btn -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- sidebar header -->
+          <div class="offcanvas-header border-bottom">
+            <a href="#"
+              ><img
+                src="img/mt-logo50px.png"
+                alt="Maretred logo"
+                class="img-fluid"
+            /></a>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Maretred</h5>
+            <button
+              type="button"
+              class="btn-close btn-close shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- sidebar body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link"
+                  title="Home"
+                  aria-current="page"
+                  href="home.html"
+                  ><span class="material-symbols-outlined align-middle">
+                    home </span
+                  ><span class="align-middle">Home</span></a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" title="Trade" href="#trade"
+                  ><span class="material-symbols-outlined align-middle">
+                    handshake </span
+                  ><span class="align-middle">Trade</span></a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" title="Groups" href="#groups"
+                  ><span class="material-symbols-outlined align-middle">
+                    groups </span
+                  ><span class="align-middle">Groups</span></a
+                >
+              </li>
+            </ul>
+            <!-- search -->
+            <div class="d-flex justify-content-center align-items-center">
+              <form
+                class="search-pill d-flex align-middle d-flex justify-content-end align-items-center"
+                role="search"
+              >
+                <input
+                  class="form-control me-0 align-middle"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  style="height: 27px; width: 100%"
+                />
+                <button
+                  class="btn border-opacity-25 btn-sm align-middle me-3"
+                  style="height: 50%"
+                  type="submit"
+                >
+                  <span
+                    class="icon-pill material-symbols-outlined align-middle fs-5"
+                  >
+                    search
+                  </span>
+                </button>
+              </form>
+
+              <!-- message btn -->
+              <div class="nav-item dropstart d-flex me-2">
+                <a
+                  href="#"
+                  class="nav-link"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i
+                    class="icon-pill bi-chat-dots-fill fs-5 mx-2"
+                    title="Messages"
+                  ></i>
+                </a>
+                <!-- message dropdown -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><strong>Messages</strong></a
+                    >
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <form
+                      class="dropdown-item d-flex align-middle d-flex justify-content-end align-items-center"
+                      role="search"
+                    >
+                      <input
+                        class="form-control me-0 align-middle"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        style="height: 27px; width: 100%"
+                      />
+                      <button
+                        class="btn border-opacity-25 btn-sm align-middle me-3"
+                        style="height: 50%"
+                        type="submit"
+                      >
+                        <span
+                          class="icon-pill material-symbols-outlined align-middle fs-5"
+                        >
+                          search
+                        </span>
+                      </button>
+                    </form>
+                  </li>
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Monkey Luffy
+                      <p style="text-align: center">Sent you a message</p>
+                    </a>
+                  </li>
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Trafalgar Law
+                      <p style="text-align: center">Sent you a message</p>
+                    </a>
+                  </li>
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Big Mom
+                      <p style="text-align: center">Sent you a message</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item message-pill" href="#"
+                      >See all messages!</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- notification btn -->
+              <div class="nav-item dropstart d-flex me-2">
+                <a
+                  href="#"
+                  class="nav-link"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i
+                    class="icon-pill bi bi-bell-fill fs-5 mx-2"
+                    title="Notification"
+                  ></i>
+                </a>
+                <!-- notification dropdown -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><strong>Notification</strong></a
+                    >
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Nami Cat Burger
+                      <p style="text-align: center">Commented on your post</p>
+                    </a>
+                  </li>
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Roronoa Zoro
+                      <p style="text-align: center">Liked your post</p>
+                    </a>
+                  </li>
+                  <li class="message-pill dropdown-item my-3 pt-2">
+                    <a href="#">
+                      <img
+                        src="img/profile-pic/default-pic.jpg"
+                        class="img-fluid profile-pic"
+                        alt=""
+                      />
+                      Cyborg Franky
+                      <p style="text-align: center">Shared your post</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item message-pill" href="#"
+                      >See all notification</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- profile -->
+              <div class="nav-item dropstart d-flex">
+                <a
+                  href="#"
+                  class="nav-link"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Profile"
+                >
+                  <img
+                    src="img/shanks.jpg"
+                    class="profile-pic img-fluid"
+                    alt=""
+                  />
+                </a>
+                <!-- profile dropdown -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><strong>Red Hair Shanks</strong></a
+                    >
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Help & support</a>
+                  </li>
+                  <li class="dropdown-item"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="index.html">Log Out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+      <div class="row my-5 trade-banner">
+        <div class="col-lg-9 py-3 justify-content-start">
+          <div class="row">
+            <div class="col off-md-1">
+              <p class="display-6 text-center">Pending Trades</p>
+            </div>
+          </div>
+          <div
+            class="row d-md-block justify-content-center align-items-center text-center"
+          >
+            <div class="col pb-2">
+              <span class="fs-4">Middle Man</span>
+            </div>
+
+            <div class="col">
+              <img
+                class="trade-user-img trade-user-idle img-fluid"
+                src="img/profile-pic/default-pic.jpg"
+                alt="user display picture"
+              />
+            </div>
+            <div class="col py-2">
+              <span>Monkey D Garp</span>
+            </div>
+            <hr class="d-block d-sm-none" />
+          </div>
+
+          <!--  -->
+          <div class="row justify-content-center align-item-center text-center">
+            <div class="col-lg-6 d-md-block">
+              <div class="col pb-2">
+                <button class="btn btn-outline-success">
+                  <i class="bi bi-check-square-fill"></i>
+                </button>
+                <span class="fs-4 align-middle">Buyer</span>
+                <button class="btn btn-outline-danger active">
+                  <i class="bi bi-x-square-fill"></i>
+                </button>
+              </div>
+              <div class="col">
+                <img
+                  class="trade-user-img trade-user-unready img-fluid"
+                  src="img/profile-pic/default-pic.jpg"
+                  alt="user display picture"
+                />
+              </div>
+              <div class="col py-2">
+                <span>Blackbeard Teach</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="col pb-2">
+                <button class="btn btn-outline-success active">
+                  <i class="bi bi-check-square-fill"></i>
+                </button>
+                <span class="fs-4 align-middle">Seller</span>
+                <button class="btn btn-outline-danger">
+                  <i class="bi bi-x-square-fill"></i>
+                </button>
+              </div>
+              <div class="col">
+                <img
+                  class="trade-user-img trade-user-ready img-fluid"
+                  src="img/profile-pic/default-pic.jpg"
+                  alt="user display picture"
+                />
+              </div>
+              <div class="col py-2">
+                <span>Donquixote Doflamingo</span>
+              </div>
+            </div>
+          </div>
+          <!-- 
+          <p class="fs-3">
+            Gain more fame, be more trusted, secure more deals and many more!
+          </p>
+          <div class="">
+            <a type="button" class="btn btn-banner-pill1 text-light"
+              >Get verified</a
+            > -->
+          <!-- <a
+                type="button"
+                class="btn btn-banner-pill2 text-light border-light"
+                >Learn more</a
+              > -->
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col pt-3">
+              <p class="display-6 text-center">Conversation</p>
+            </div>
+          </div>
+          <div class="px-3 bg-secondary-subtle" style="border-radius: 10px">
+            <div class="row py-2">
+              <div class="col">
+                <img
+                  src="img/profile-pic/default-pic.jpg"
+                  alt="conversation display picture"
+                  class="profile-pic trade-user-ready"
+                  title="Profile Name - Seller"
+                />
+                <span class="font-x-small"> Roronoa Zorro - Seller</span>
+                <p class="font-smaller mt-1">
+                  I have sent the items to the midman.
+                </p>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                <img
+                  src="img/profile-pic/default-pic.jpg"
+                  alt="conversation display picture"
+                  class="profile-pic trade-user-idle"
+                  title="Midman"
+                />
+                <span class="font-x-small"> Redhair Shanks - Midman</span>
+                <p class="font-smaller mt-1">
+                  Items from seller received. Buyer, your turn to send money.
+                </p>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                <img
+                  src="img/profile-pic/default-pic.jpg"
+                  alt="conversation display picture"
+                  class="profile-pic trade-user-unready"
+                  title="Profile Name - Buyer"
+                />
+                <span class="font-x-small"> Roronoa Zorro</span>
+                <p class="font-smaller mt-1">Alright, working on it.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3 px-3">
+            <div class="col d-flex justify-content-center align-items-center">
+              <img
+                src="img/profile-pic/default-pic.jpg"
+                alt="Profile Name - Midman"
+                class="profile-pic img-fluid trade-user-idle"
+              />
+              &nbsp;
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="1"
+              ></textarea>
+              <a href="" title="send comment" class="ps-1">
+                <i class="plus-btn bi bi-send align-middle"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination-pill">
+                  <li class="page-item">
+                    <a class="page-link" href="#">&lt;</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">&gt;</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+      <!-- tabs -->
+      <div class="row mt-4">
+        <div class="post-tab col-lg-12">
+          <!-- TABS -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#market"
+              >
+                Market
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#midman"
+              >
+                Midmans
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3 mb-3">
+            <!-- FOR YOU TAB -->
+            <div class="tab-pane fade show active" id="market">
+              <div class="row">
+                <div class="col">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light font-smaller dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      Sort by
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item"> FPS </a></li>
+                      <li>
+                        <a href="#" class="dropdown-item"> MMORPG </a>
+                      </li>
+                      <li><a href="#" class="dropdown-item"> MOBA </a></li>
+                      <li><a href="#" class="dropdown-item"> Others </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-3 mb-3">
+                <div
+                  class="col your-thought mx-6 py-2 justify-content-center align-items-center d-flex"
+                >
+                  <!-- MODAL - FOR YOU BTN -->
+                  <a
+                    href=""
+                    class=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#marketContent"
+                  >
+                    <div>
+                      <img
+                        src="img/shanks.jpg"
+                        class="profile-pic img-fluid"
+                        alt=""
+                        title="Red Hair Shanks"
+                      />
+                      <button
+                        type="text"
+                        name=""
+                        id="your-thought"
+                        placeholder="Sell or look for an item"
+                        class="align-middle mx-3"
+                      >
+                        Sell or look for an item
+                      </button>
+                      <i class="plus-btn bi bi-plus-circle align-middle"></i>
+                    </div>
+                  </a>
+                  <hr />
+                  <!-- MODAL - your thought-->
+                  <div class="modal fade" id="marketContent" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header fs-3">
+                          <span class="text-center">New post</span>
+                          <button
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows="10"
+                              placeholder="What's on your mind?"
+                              maxlength="1000"
+                            ></textarea>
+                            <div class="col-lg-12">
+                              <div class="new-post-icons w-100">
+                                <div
+                                  class="my-3 fs-3 d-flex align-items-center justify-content-center"
+                                >
+                                  <a
+                                    href=""
+                                    class="modal-newpost-icon px-3"
+                                    title="Emoji"
+                                    ><i class="bi bi-emoji-smile"></i>
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="modal-newpost-icon px-3"
+                                    title="Photo/Video"
+                                  >
+                                    <i class="bi bi-image"></i>
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="modal-newpost-icon px-3"
+                                    title="Tag people"
+                                  >
+                                    <i class="bi bi-person-add"></i>
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="modal-newpost-icon px-3"
+                                    title="Location"
+                                  >
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <button class="btn btn-primary" id="modal-post-btn">
+                              Post
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 1st POST  -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card text-center">
+                    <div class="card-header">
+                      <a href="#">
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid profile-pic"
+                          alt=""
+                        />
+                        Warlord Jimbei |
+                      </a>
+                      <span class="text-body-secondary">5m ago</span>
+                    </div>
+                    <!-- card body -->
+                    <div class="card-body">
+                      <a href="" id="modal-img-1">
+                        <img
+                          src="img/dota2.jpg"
+                          class="card-img-top img-fluid"
+                          style="width: 20%"
+                          id="img-resource-1"
+                          alt="..."
+                        />
+                      </a>
+                      <!-- <h5 class="card-title">Special title treatment</h5> -->
+                      <p class="card-text mt-2">
+                        Selling my arcana skins = 1000 gcash,<br />
+                        payment method via MM <br />You pay midman fee
+                      </p>
+                    </div>
+                    <!-- card body img modal -->
+
+                    <!-- reactions -->
+                    <div class="text-body-secondary">
+                      <a class="reaction-pill" href="#" title="view likes">
+                        <i class="bi bi-hand-thumbs-up-fill color-paint"></i>
+                        15 likes
+                      </a>
+                      <span> | </span>
+                      <a class="reaction-pill" href="#" title="view comments">
+                        <i class="bi bi-chat-square-text-fill color-paint"></i>
+                        3 comments</a
+                      >
+                      <span> | </span>
+                      <a class="reaction-pill" href="" title="view shared">
+                        <i class="bi bi-share-fill color-paint"></i> 2 shares</a
+                      >
+                    </div>
+
+                    <!-- write a comment comment -->
+                    <div class="card-footer text-body-secondary" i>
+                      <div>
+                        <a href="">
+                          <img
+                            src="img/shanks.jpg"
+                            class="profile-pic img-fluid"
+                            alt=""
+                            title="Red Hair Shanks"
+                        /></a>
+                        <textarea
+                          placeholder="Write a comment..."
+                          type="text"
+                          name=""
+                          id="write-comment"
+                          class="write-comment align-middle mx-3 bg-light"
+                        ></textarea>
+                        <a href="" title="send comment">
+                          <i class="plus-btn bi bi-send align-middle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <!-- 2ndt POST  -->
+              <div class="row py-4">
+                <div class="col-lg-12">
+                  <div class="card text-center">
+                    <div class="card-header">
+                      <a href="#">
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid profile-pic"
+                          alt=""
+                        />
+                        Hawkeye Mihawk |
+                      </a>
+                      <span class="text-body-secondary">6h ago</span>
+                    </div>
+                    <!-- card body -->
+                    <div class="card-body">
+                      <a href="" id="modal-img-1">
+                        <img
+                          src="img/garena.jpg"
+                          class="card-img-top img-fluid"
+                          style="width: 20%"
+                          id="img-resource-1"
+                          alt="..."
+                        />
+                      </a>
+                      <a href="" id="modal-img-1">
+                        <img
+                          src="img/undawn.jpg"
+                          class="card-img-top img-fluid"
+                          style="width: 20%"
+                          id="img-resource-1"
+                          alt="..."
+                        />
+                      </a>
+                      <!-- <h5 class="card-title">Special title treatment</h5> -->
+                      <p class="card-text mt-2">
+                        LF> Undawn ACC: 55k rating <br />
+                        Budget: 6k
+                        <br />DM me.
+                      </p>
+                    </div>
+                    <!-- card body img modal -->
+
+                    <!-- reactions -->
+                    <div class="text-body-secondary">
+                      <a class="reaction-pill" href="#" title="view likes">
+                        <i class="bi bi-hand-thumbs-up-fill color-paint"></i>
+                        34 likes
+                      </a>
+                      <span> | </span>
+                      <a class="reaction-pill" href="#" title="view comments">
+                        <i class="bi bi-chat-square-text-fill color-paint"></i>
+                        12 comments</a
+                      >
+                      <span> | </span>
+                      <a class="reaction-pill" href="" title="view shared">
+                        <i class="bi bi-share-fill color-paint"></i> 5 shares</a
+                      >
+                    </div>
+
+                    <!-- write a comment comment -->
+                    <div class="card-footer text-body-secondary" i>
+                      <div>
+                        <a href="">
+                          <img
+                            src="img/shanks.jpg"
+                            class="profile-pic img-fluid"
+                            alt=""
+                            title="Red Hair Shanks"
+                        /></a>
+                        <textarea
+                          placeholder="Write a comment..."
+                          type="text"
+                          name=""
+                          id="write-comment"
+                          class="write-comment align-middle mx-3 bg-light"
+                        ></textarea>
+                        <a href="" title="send comment">
+                          <i class="plus-btn bi bi-send align-middle"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <!--END Trade TAB-->
+            </div>
+
+            <!-------------------------------------------------------------------------->
+
+            <!-- MIDMANS TAB -->
+            <div class="tab-pane fade" id="midman">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Roronoa Zoro </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt=""
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Soul King Brook </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt="midman pic"
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Nami Cat Burglar </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt="midman pic"
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <div class="card-title">asdasd</div> -->
+                    <div class="card-body text-center mt-3">
+                      <a href="#"> Sogeking Usopp </a>
+                      <!-- <span> | </span>
+                      <span class="text-body-secondary">11m ago</span> -->
+                      <p>
+                        <img
+                          src="img/profile-pic/default-pic.jpg"
+                          class="img-fluid top-midman"
+                          alt="midman pic"
+                        />
+                      </p>
+                      <p class="rating-top-midman">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </p>
+                      <button class="btn details-btn">More Details</button>
+                    </div>
+                    <!-- <p class="card-text text-center">
+                      sdfsdfsdjkfsdfj ldsjfld jslkfjlsdj flk
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
